@@ -1,0 +1,306 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variáveis */
+:root {
+    --cor-primaria-marrom: #733E35;
+    --cor-secundaria-preta: #000000; 
+    --cor-terciaria-branca: #DED6D6;
+    --cor-background: #CEC8C8;
+    --cor-fonte-titulos-texto1: #542E28;
+    --cor-fonte-titulos2: #181818;
+    --cor-fonte-texto1: #3A1919;
+    --cor-fonte-hover: rgba(84, 46, 40, 0.49);
+    --cor-fonte-botoes: #F6F6F6;
+    --poppins-font: "Poppins", sans-serif;
+    --Montserrat-font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: var(--cor-background);
+}
+
+/*Rodrigo - menu */
+
+.div_fundo{
+    width: 100%;
+    height: 150px;
+    margin: auto;
+}
+
+/*----- DIV -----*/
+
+.div_logo{
+    position: relative;
+    width: 280px;
+    height: 150px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.div1 img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+/*----- NAV -----*/
+
+.nav1{
+    position: relative;
+    width: 52%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    float: left;
+}
+.nav2{
+    position: relative;
+    width: 23.5%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    float: right;
+}
+nav .a_menu{
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight:600;
+}
+nav .botoes{
+    margin: 50px 0px 0px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float: right;
+    width: 5px;
+    height: 50px;
+}
+nav .newsletter{
+    color: white;
+    padding: 14px 25px 14px 25px;
+    margin: 45px 40px 0px 0px;
+    width: 120px;
+    height: 40px;
+    border-radius: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    float: right;
+    font-size: 25px;
+    background-color: rgba(115, 62, 53, 1);
+    font-weight: 645;
+}
+
+
+nav .a_menu:hover{
+    transition: 0.4s all;
+    text-decoration: underline;
+}
+
+nav .newsletter:hover{
+    color: white;
+    background-color: rgb(151, 83, 72);
+    transition: 0.7s all;
+}
+
+/* Pamela - Primeira parte da landing */
+.conteudo1 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.texto_container {
+    flex: 1; 
+}
+
+.parte1_titulo {
+    font-family: var(--Montserrat-font);
+    color: var(--cor-primaria-marrom);
+    text-align: left;
+    font-size: 55px;
+    font-weight: 800;
+    padding-left: 50px;
+}
+
+.parte1_subtitulo {
+    font-family: var(--poppins-font);
+    color: var(--cor-primaria-marrom);
+    text-align: left;
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+#parte1_p {
+    font-family: var(--Montserrat-font);
+    color: var(--cor-fonte-texto1);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 50px;
+}
+.botao1, .botao2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 9px 10px 9px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 30px 10px 0px 45px; 
+}
+
+.botao1 {
+    background-color: var(--cor-primaria-marrom);
+    border-radius: 15px;
+    border: none;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    padding: 9px 24px 9px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 30px 10px 0px 45px; 
+}
+
+.texto_botao {
+    background-color: var(--cor-primaria-marrom);
+    color: var(--cor-fonte-botoes);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+
+.icone_botao {
+    background-color: var(--cor-primaria-marrom);
+    width: 20px;
+    height: auto;
+}
+
+.botao2 {
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    background-color: transparent;
+    color: var(--cor-primaria-marrom);
+    border: 1.5px solid var(--cor-primaria-marrom);
+    border-radius: 15px;
+    padding: 8px 26px 8px 26px;
+    margin: 10px 20px 0px 0px; 
+}
+
+.botao2:hover {
+    background-color: var(--cor-primaria-marrom);
+    color: var(--cor-fonte-botoes);
+}
+
+.img_direita {
+    width: 450px;
+    margin-right: 45px;
+}
+
+.img_cafe {
+    width: 100%;
+    height: auto;
+}
+
+/* Gustavo - Segunda parte - Explore nossos produtos */
+.segunda-parte {
+    color: var(--cor-fonte-titulos1);
+    text-align: center;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    gap: 16px;
+    border-top: 3px solid #F6F6F6;
+}
+
+.explore-produtos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.explore-produtos h3{
+    text-align: center;
+    font-family: var(--poppins-font);
+    font-size: 35px;
+    color: var(--cor-fonte-texto1);
+    margin-top: -40px;
+}
+
+.explore-produtos p{
+    text-align: center;
+    font-family: var(--Montserrat-font);
+    font-size: 25px;
+    color: var(--cor-secundaria-preta);
+    position: relative;
+}
+
+.cardsprodutos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    gap: 16px;
+    background-color: #000000;
+    width: 100%;
+    height: 400px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 12px #aaa;
+}
+
+.imagem-produtos {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin-top: 10px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.cardsprodutos p{
+    color: var(--cor-fonte-titulos2);
+    font-size: 13px;
+    text-align: center;
+}
+
+.cardsprodutos h3{
+    color: var(--cor-fonte-titulos2);
+    text-align: center;
+}
+
+.cardsprodutos span{
+    color: var(--cor-fonte-titulos2);
+    text-align: center;
+
+}
+
+.cardsprodutos button{
+    text-align: center;
+    font-family: var(--poppins-font);
+    color: var(--cor-fonte-titulos-texto1);
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+

@@ -1,0 +1,178 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Variáveis */
+:root {
+    --cor-primaria-marrom: #733E35;
+    --cor-secundaria-preta: #000000; 
+    --cor-terciaria-branca: #DED6D6;
+    --cor-background: #CEC8C8;
+    --cor-fonte-titulos-texto1: #542E28;
+    --cor-fonte-titulos2: #181818;
+    --cor-fonte-texto1: #3A1919;
+    --cor-fonte-hover: rgba(84, 46, 40, 0.49);
+    --cor-fonte-botoes: #F6F6F6;
+    --poppins-font: "Poppins", sans-serif;
+    --Montserrat-font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: var(--cor-background);
+}
+
+
+/*Pamela - Contato*/
+.img_contatocoffee {
+    width: 100%;
+    overflow: hidden;
+}
+.container_image {
+    width: 100%;  
+    overflow: hidden;
+}
+
+.contato_h1 {
+    font-size: 37px;
+    font-family: var(--poppins-font);
+    color: var(--cor-fonte-titulos-texto1);
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.bloco1, .bloco2 {
+    width: 48%; 
+}
+
+.bloco1 {
+    float: right;
+}
+
+.bloco2 {
+    float: left;
+}
+
+.contato_p1, .contato_p2 {
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    color: var(--cor-fonte-texto1);
+    margin-bottom: 20px;
+}
+
+.contato_p1 {
+    text-align: right;
+}
+
+.contato_p2 {
+    text-align: left;
+}
+
+.contato_botao1, .contato_botao2 {
+    background-color: var(--cor-primaria-marrom);
+    border-radius: 15px;
+    border: none;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    padding: 11px 24px 11px 20px;
+    transition: background-color 0.3s, color 0.5s;
+    color: var(--cor-fonte-botoes);
+    cursor: pointer;
+    margin: 10px 0px 15px 0px;
+}
+
+.contato_botao1 {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.contato_botao2 {
+    background-color: transparent;
+    color: var(--cor-primaria-marrom);
+    border: 1.5px solid var(--cor-primaria-marrom);
+}
+.contato_botao2:hover {
+    background-color: var(--cor-primaria-marrom);
+    color: var(--cor-fonte-botoes);
+}
+
+footer {
+    background-color: #261E1B;
+    width: 100%;
+    padding: 20px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: 260px;
+    position: relative; /* Adicionando posicionamento relativo */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+footer * {
+    background-color: transparent;
+}
+
+footer h3 {
+    font-family: var(--Montserrat-font);
+    font-size: 17px;
+    color: var(--cor-fonte-botoes);
+    margin-left: 10px;
+}
+
+footer p {
+    font-family: var(--Montserrat-font);
+    font-weight: 400;
+    color: var(--cor-terciaria-branca);
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    font-family: var(--Montserrat-font);
+    font-weight: 300;
+    color: var(--cor-terciaria-branca);
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+}
+
+footer p a {
+    display: inline-block; 
+    margin: -0.9px;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+
+.icones_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy_footer {
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 30px;
+    background-color: #6D5854;
+    width: 100%; 
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    height: 60px;
+}
