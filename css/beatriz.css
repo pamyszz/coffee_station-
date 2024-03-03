@@ -21,10 +21,109 @@
     box-sizing: border-box;
     background-color: var(--cor-background);
 }
-.sobre_p1{
-    height: 100vh;
+/*Rodrigo - menu */
+
+.div_fundo{
+    width: 100%;
+    height: 150px;
+    margin: auto;
+}
+
+/*----- DIV -----*/
+
+.div_logo{
+    position: relative;
+    width: 280px;
+    height: 150px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
+}
+.div_logo img{
+    width: 15vw;
+    height: 13vh;
+}
+.div1 img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+/*----- NAV -----*/
+
+.nav1{
+    position: relative;
+    width: 52%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    float: left;
+}
+.nav2{
+    position: relative;
+    width: 23.5%;
+    height: 130px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    float: right;
+    align-items: center;
+}
+nav .a_menu{
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight:600;
+}
+nav .botoes{
+    margin: 50px 0px 0px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float: right;
+    width: 5px;
+    height: 50px;
+}
+nav .newsletter{ /*  Ajuste na estilização NAV para melhor vizualização - by Beatriz*/
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 27px 40px 0px 0px;
+    width: 120px;
+    height: 40px;
+    border-radius: 22px;
+    font-family: var(--Montserrat-font);
+    text-decoration: none;
+    font-size: 13px;
+    background-color: var(--cor-primaria-marrom);
+    justify-content: center;
+    font-weight: 600;
+}
+
+
+nav .a_menu:hover{
+    transition: 0.4s all;
+    text-decoration: underline;
+}
+
+nav .newsletter:hover{
+    color: white;
+    background-color: rgb(151, 83, 72);
+    transition: 0.7s all;
+}
+/*-------------------------------Sobre - Beatriz----------------------------------*/
+
+.sobre_part1{
+    height: 85vh;
+    display: flex;
+    align-items: flex-end;
     background-image:url(/img/zyro-image\ 1.png);
     background-repeat:no-repeat;
     background-size: 25vw 105vh;
@@ -39,7 +138,7 @@
     h1{
         color: var(--cor-primaria-marrom);
         font-size: 2.3em;
-        font-family: var(--cor-primaria-marrom);
+        font-family: var(--poppins-font);
     }
     p{
         font-family: var(--poppins-font);
@@ -50,21 +149,23 @@
         margin-top: 25px;
     }
 }
-.sobre_p2{
-    height: 500px;
+.sobre_part2{
+    height: 600px;
+    margin-top: 15vh;
     display: flex;
     justify-content: center;
     background-image: url(/img/xicara-de-cha-placer-de-cha-de-frutas-secas-removebg-preview\ 1.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 20vw 100vh;
+    background-size: 25vw 115vh;
+    background-position-y: top;
 }
 .sobre_texts2{
     width: 60%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: center;
 }
 .sobre_texts2 div{
     display: flex;
@@ -76,18 +177,25 @@
     display: flex;
     flex-direction: column;
     font-family: var(--poppins-font);
+
     h2{
         text-align: end;
         color: var(--cor-fonte-titulos-texto1);
         font-size: 2em;
+        margin-bottom: 20px;
     }
     h3{
         text-align: end;
         color: var(--cor-fonte-titulos-texto1);
+        font-size: 1.5em;
+        margin-bottom: 20px;
     }
     p{
         text-align: end;
         color: var(--cor-fonte-titulos-texto1);
+        font-size: 0.9em;
+        width: 22vw;
+        margin-bottom: 20px;
     }
 }
 
@@ -95,12 +203,158 @@
     display: flex;
     flex-direction: column;
     font-family: var(--poppins-font);
+    background-color: transparent;
     h2{
         text-align: start;
         font-size: 2em;
         color: var(--cor-fonte-titulos-texto1);
+        margin-bottom: 20px;
+        background-color: transparent;
     }
     h3{
         text-align: start;
+        color: var(--cor-fonte-titulos-texto1);
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        background-color: transparent;
     }
+    p{
+        text-align: start;
+        color: var(--cor-fonte-titulos-texto1);
+        font-size: 0.9em;
+        width: 15vw;
+        margin-bottom: 20px;
+        background-color: transparent;
+    }
+}
+.sobre_part3{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.equipe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 45vw;
+    justify-content: space-between;
+    margin-top: 35px;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px
+    }
+    img{
+        width: 11vw;
+        height: 30vh;
+    }
+    p{
+        font-size: 0.8em;
+        font-family:var(--poppins-font);
+        text-align: center;
+        width: 14vw;
+        font-weight: bold;
+    }
+}
+.sobre_texts3{
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-family: var(--poppins-font);
+        color: var(--cor-primaria-marrom);
+        font-size: 3em;
+        text-align: center;
+    }
+    p{
+        font-family: var(--poppins-font);
+        color: var(--cor-fonte-texto1);
+        font-size: 0.9em;
+        width: 45vw;
+        text-align: center;
+        margin-top: 25px;
+    }
+}
+/*----------------------------- Footer - Pamela -------------------------------------*/
+footer {
+    background-color: #261E1B;
+    width: 100%;
+    padding: 20px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: 260px;
+    position: relative; /* Adicionando posicionamento relativo */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+footer * {
+    background-color: transparent;
+}
+
+footer h3 {
+    font-family: var(--Montserrat-font);
+    font-size: 17px;
+    color: var(--cor-fonte-botoes);
+    margin-left: 10px;
+}
+
+footer p {
+    font-family: var(--Montserrat-font);
+    font-weight: 400;
+    color: var(--cor-terciaria-branca);
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    font-family: var(--Montserrat-font);
+    font-weight: 300;
+    color: var(--cor-terciaria-branca);
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+}
+
+footer p a {
+    display: inline-block; 
+    margin: -0.9px;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+
+.icones_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy_footer {
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 30px;
+    background-color: #6D5854;
+    width: 100%; 
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    height: 60px;
 }
