@@ -1,0 +1,25 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5A3524;
+
+}
+
+section{
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    padding-left: 420px;
+}
+
+section img{
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+
+}
