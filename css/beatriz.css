@@ -6,7 +6,7 @@
     --cor-primaria-marrom: #733E35;
     --cor-secundaria-preta: #000000; 
     --cor-terciaria-branca: #DED6D6;
-    --cor-background: #CEC8C8;
+    --cor-background:  #edeaea;
     --cor-fonte-titulos-texto1: #542E28;
     --cor-fonte-titulos2: #181818;
     --cor-fonte-texto1: #3A1919;
@@ -21,113 +21,17 @@
     box-sizing: border-box;
     background-color: var(--cor-background);
 }
-/*Rodrigo - menu */
-
-.div_fundo{
-    width: 100%;
-    height: 150px;
-    margin: auto;
-}
-
-/*----- DIV -----*/
-
-.div_logo{
-    position: relative;
-    width: 280px;
-    height: 150px;
-    float: left;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-}
-.div_logo img{
-    width: 15vw;
-    height: 13vh;
-}
-.div1 img{
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-
-/*----- NAV -----*/
-
-.nav1{
-    position: relative;
-    width: 52%;
-    height: 150px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    justify-content: space-around;
-    float: left;
-}
-.nav2{
-    position: relative;
-    width: 23.5%;
-    height: 130px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    justify-content: space-between;
-    float: right;
-    align-items: center;
-}
-nav .a_menu{
-    margin: auto;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-    color: black;
-    font-size: 23px;
-    font-weight:600;
-}
-nav .botoes{
-    margin: 50px 0px 0px 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    float: right;
-    width: 5px;
-    height: 50px;
-}
-nav .newsletter{ /*  Ajuste na estilização NAV para melhor vizualização - by Beatriz*/
-    color: white;
-    display: flex;
-    align-items: center;
-    margin: 27px 40px 0px 0px;
-    width: 120px;
-    height: 40px;
-    border-radius: 22px;
-    font-family: var(--Montserrat-font);
-    text-decoration: none;
-    font-size: 13px;
-    background-color: var(--cor-primaria-marrom);
-    justify-content: center;
-    font-weight: 600;
-}
-
-
-nav .a_menu:hover{
-    transition: 0.4s all;
-    text-decoration: underline;
-}
-
-nav .newsletter:hover{
-    color: white;
-    background-color: rgb(151, 83, 72);
-    transition: 0.7s all;
-}
 /*-------------------------------Sobre - Beatriz----------------------------------*/
 
 .sobre_part1{
     height: 85vh;
     display: flex;
     align-items: flex-end;
-    background-image:url(/img/zyro-image\ 1.png);
+    background-image:url(/img/zyro-image1.png);
     background-repeat:no-repeat;
-    background-size: 25vw 105vh;
+    background-size: 25vw 100vh;
 }
+
 .sobre_texts{
     background-color: transparent;
     display: flex;
@@ -154,7 +58,7 @@ nav .newsletter:hover{
     margin-top: 15vh;
     display: flex;
     justify-content: center;
-    background-image: url(/img/xicara-de-cha-placer-de-cha-de-frutas-secas-removebg-preview\ 1.png);
+    background-image: url(/img/xicara-de-cha-placer-de-cha-de-frutas-secas-removebg-preview-1.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 25vw 115vh;
@@ -357,4 +261,98 @@ footer img {
     bottom: 0; 
     left: 0; 
     height: 60px;
+}
+
+
+
+/* ---- RODRIGO MENU ---- */
+
+.div_fundo{
+    width: 100%;
+    height: 150px;
+    margin: auto;
+}
+
+/*----- DIV -----*/
+
+.div_logo{
+    position: relative;
+    width: 280px;
+    height: 150px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.div1 img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+/*----- NAV -----*/
+
+.nav1{
+    position: relative;
+    width: 52%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    float: left;
+}
+.nav2{
+    position: relative;
+    width: 23.5%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    float: right;
+}
+nav .a_menu{
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight:600;
+}
+nav .botoes{
+    margin: 50px 0px 0px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float: right;
+    width: 5px;
+    height: 50px;
+}
+nav .newsletter{
+    color: white;
+    padding: 10px 28px 45px 25px;
+    margin: 45px 40px 10px 0px;
+    width: 115px;
+    height: 40px;
+    border-radius: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    float: right;
+    font-size: 25px;
+    background-color: rgba(115, 62, 53, 1);
+    font-weight: 645;
+}
+
+
+nav .a_menu:hover{
+    color: rgba(84, 46, 40, 1);
+    transition: all 0.5s;
+    border-bottom: 5px solid rgba(84, 46, 40, 1);
+    border-radius: 1px;
+}
+
+nav .newsletter:hover{
+    color: rgb(151, 83, 72);
+    background-color: rgba(246, 246, 246, 1);
+    transition: 0.7s all;
 }

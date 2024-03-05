@@ -6,26 +6,35 @@
     <title>Estação Café - Localização</title>
     <!-- Link para o CSS -->
     <link rel="stylesheet" href="css/localizacao.css" />
-    <link rel="icon" type="image/x-icon" href="img/Icons/menu/Logo.png" />
+   <link rel="shortcut icon" href="img/Icons/menu/LOGO.nav.png" type="image/x-icon">
 </head>
-
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="js/libras.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 <body>
     <!-- Parte Menu - Rodrigo-->
     <div class="div_fundo">
         <div class="div_logo">
-            <img src="img/Icons/menu/Logo.png">
+            <img src="img/Logo.png">
         </div>
         <nav class="nav1">
             <a class="a_menu" href="index.html">Home</a>
-            <a class="a_menu" href="#">Cardápio</a>
+            <a class="a_menu" href="cardapio_quente.html">Cardápio</a>
             <a class="a_menu" href="localizacao.html">Localização</a>
             <a class="a_menu" href="sobre.html">Sobre</a>
             <a class="a_menu" href="contato.html">Contato</a>
         </nav>
-         <nav class="nav2">
-            <a class="botoes" href="#"><img src="img/Icons/menu/procurar.png" alt="Pesquisar algo"></a>
-            <a class="botoes" href="#"><img src="img/Icons/menu/carrinho.png" alt="Carrinho de Compra"></a>
-            <a class="newsletter" href="#">Menu</a>
+        <nav class="nav2">
+            <a class="botoes" href="#"><img src="img/Lupa.png"></a>
+            <a class="botoes" href="#"><img src="img/carrinho.png"></a>
+            <a class="newsletter" href="menu.pdf">Menu</a>
         </nav>
     </div>
 <!-- Parte localização Giovana -->
@@ -56,5 +65,60 @@
             </div>
         </section>
     </main>
+<!--Footer Pamela -->
+    <footer>
+        <div class="footer-content">
+            <div id="Privacidade">
+                <h3>Privacidade</h3>
+                <p>
+                    <a href="#">Termos de Serviço</a><br>
+                    <a href="#">Políticas de Privacidade</a>
+                </p>
+            </div>
+            
+            <div id="Servicos">
+                <h3>Serviços</h3>
+                <p>
+                    <a href="#">Cardápio</a><br>
+                    <a href="index.html">Produtos Especiais</a>
+                </p>
+            </div>
+            
+            <div id="Sobre-nos">
+                <h3>Sobre-nós</h3>
+                <p>
+                    <a href="localizacao.html">Nossa Localização</a><br>
+                    <a href="sobre.html">Nossa História</a><br>
+                    <a href="sobre.html">Nossa Equipe</a>
+                </p>
+            </div>
+            
+            <div id="Informacoes">
+                <h3>Informações</h3>
+                <p>
+                    <a href="contato.html">Contato</a><br>
+                    <a href="contato.html">Trabalhe Conosco</a><br>
+                    <a href="#">Assine nossa Newsletter</a>
+                </p>
+            </div>
+            
+            <div id="Redes-sociais">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <div class="icones_footer">
+                        <li><a href="#"><img src="/img/Icons/footer/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="/img/Icons/footer/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="/img/Icons/footer/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="/img/Icons/footer/linkedin.png" alt="Linkedin"></a></li>
+                        <li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copy_footer">
+            <p>Copyright &#169; 2024 - Estação Café</p>
+        </div>
+    </footer>
 </body>
 </html>

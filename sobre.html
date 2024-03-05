@@ -7,26 +7,39 @@
         <title>Estação Café - Sobre Nós</title>
         <!-- Link para o CSS -->
         <link rel="stylesheet" href="css/beatriz.css" />
+        <link rel="shortcut icon" href="img/Icons/menu/LOGO.nav.png" type="image/x-icon">
     </head>
     <body>
+
+<!-- Para acessibilidade em Libras - Pamela -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="js/libras.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
         <!-- Nav Menu - Rodrigo -->
         <header> 
             <div class="div_fundo">
                 <div class="div_logo">
-                    <img src="img/Icons/menu/Logo.png">
+                    <img src="img/Logo.png">
                 </div>
                 <nav class="nav1">
                     <a class="a_menu" href="index.html">Home</a>
-                    <a class="a_menu" href="menu.pdf">Cardápio</a>
+                    <a class="a_menu" href="cardapio_quente.html">Cardápio</a>
                     <a class="a_menu" href="localizacao.html">Localização</a>
-                    <a class="a_menu" href="#">Sobre</a>
+                    <a class="a_menu" href="sobre.html">Sobre</a>
                     <a class="a_menu" href="contato.html">Contato</a>
                 </nav>
                 <nav class="nav2">
-                    <a class="botoes" href="#"><img src="img/Icons/menu/procurar.png" alt="Pesquisar algo"></a>
-                    <a class="botoes" href="#"><img src="img/Icons/menu/carrinho.png" alt="Carrinho de Compra"></a>
-                    <a class="newsletter" href="#">Menu</a>
+                    <a class="botoes" href="#"><img src="img/Lupa.png"></a>
+                    <a class="botoes" href="#"><img src="img/carrinho.png"></a>
+                    <a class="newsletter" href="menu.pdf">Menu</a>
                 </nav>
             </div>
         </header>
@@ -129,7 +142,7 @@
                     <h3>Informações</h3>
                     <p>
                         <a href="contato.html">Contato</a><br>
-                        <a href="#">Trabalhe Conosco</a><br>
+                        <a href="contato.html">Trabalhe Conosco</a><br>
                         <a href="#">Assine nossa Newsletter</a>
                                 
                     </p>        

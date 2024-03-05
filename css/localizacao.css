@@ -25,7 +25,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/*Rodrigo - menu */
+/* ---- RODRIGO MENU ---- */
 
 .div_fundo{
     width: 100%;
@@ -90,30 +90,33 @@ nav .botoes{
 }
 nav .newsletter{
     color: white;
-    padding: 14px 25px 14px 25px;
-    margin: 45px 40px 0px 0px;
-    width: 120px;
+    padding: 10px 28px 45px 25px;
+    margin: 45px 40px 10px 0px;
+    width: 115px;
     height: 40px;
     border-radius: 22px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     float: right;
     font-size: 25px;
-    background-color: rgba(115, 62, 53, 1);
     font-weight: 645;
+    background-color: rgba(115, 62, 53, 1);
 }
 
 
 nav .a_menu:hover{
-    transition: 0.4s all;
-    text-decoration: underline;
+    color: rgba(84, 46, 40, 1);
+    transition: all 0.5s;
+    border-bottom: 5px solid rgba(84, 46, 40, 1);
+    border-radius: 1px;
 }
 
 nav .newsletter:hover{
-    color: white;
-    background-color: rgb(151, 83, 72);
+    color: rgb(151, 83, 72);
+    background-color: rgba(246, 246, 246, 1);
     transition: 0.7s all;
 }
+
 
 /* Pamela - Primeira parte da landing */
 .conteudo1 {
@@ -367,7 +370,92 @@ p{
     width: 100%;
 }
 
-.img-mapa{
+.container-mapa iframe {
+    width: 1200px;
     height: 700px;
-
+    margin-top: 90px;
 }
+
+/*Footer - Pamela*/
+footer {
+    background-color: #261E1B;
+    width: 100%;
+    padding: 20px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: 260px;
+    position: relative; /* Adicionando posicionamento relativo */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+footer * {
+    background-color: transparent;
+}
+
+footer h3 {
+    font-family: var(--Montserrat-font);
+    font-size: 17px;
+    color: var(--cor-fonte-botoes);
+    margin-left: 10px;
+}
+
+footer p {
+    font-family: var(--Montserrat-font);
+    font-weight: 400;
+    color: var(--cor-terciaria-branca);
+    padding: 10px;
+    font-size: 19px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    font-family: var(--Montserrat-font);
+    font-weight: 300;
+    color: var(--cor-terciaria-branca);
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+}
+
+footer p a {
+    display: inline-block; 
+    margin: -0.9px;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+
+.icones_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy_footer {
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 30px;
+    background-color: #6D5854;
+    width: 100%; 
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    height: 60px;
+}
+

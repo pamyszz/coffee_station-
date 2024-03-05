@@ -6,7 +6,7 @@
     --cor-primaria-marrom: #733E35;
     --cor-secundaria-preta: #000000; 
     --cor-terciaria-branca: #DED6D6;
-    --cor-background: #CEC8C8;
+    --cor-background:  #edeaea;
     --cor-fonte-titulos-texto1: #542E28;
     --cor-fonte-titulos2: #181818;
     --cor-fonte-texto1: #3A1919;
@@ -20,9 +20,11 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    background-color: var(--cor-background);
 }
 
+body {
+    background-color: var(--cor-background);
+}
 /*Rodrigo - menu */
 
 .div_fundo{
@@ -88,9 +90,9 @@ nav .botoes{
 }
 nav .newsletter{
     color: white;
-    padding: 14px 25px 14px 25px;
-    margin: 45px 40px 0px 0px;
-    width: 120px;
+    padding: 10px 28px 45px 25px;
+    margin: 45px 40px 10px 0px;
+    width: 115px;
     height: 40px;
     border-radius: 22px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -103,21 +105,25 @@ nav .newsletter{
 
 
 nav .a_menu:hover{
-    transition: 0.4s all;
-    text-decoration: underline;
+    color: rgba(84, 46, 40, 1);
+    transition: all 0.5s;
+    border-bottom: 5px solid rgba(84, 46, 40, 1);
+    border-radius: 1px;
 }
 
 nav .newsletter:hover{
-    color: white;
-    background-color: rgb(151, 83, 72);
+    color: rgb(151, 83, 72);
+    background-color: rgba(246, 246, 246, 1);
     transition: 0.7s all;
 }
+
 
 /* Pamela - Primeira parte da landing */
 .conteudo1 {
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    background-color: var(--cor-background);
 }
 
 .texto_container {
@@ -227,7 +233,6 @@ nav .newsletter:hover{
     position: relative;
     flex-direction: column;
     align-items: center;
-
 }
 
 .explore-produtos h3{
@@ -243,6 +248,7 @@ nav .newsletter:hover{
     font-size: 25px;
     color: var(--cor-secundaria-preta);
     position: relative;
+    
 }
 
 #exclusivo{
@@ -318,6 +324,7 @@ nav .newsletter:hover{
     font-size: 14px;
     font-weight: bold;
     font-family: var(--poppins-font);
+    background-color: var(--cor-background);
 }
 
 .card button:hover {
@@ -325,6 +332,107 @@ nav .newsletter:hover{
     cursor: pointer;
 }
 
+/*Luane - 3º parte */
+.luane12{
+    margin: 75px;
+    height: 290px;
+    background-color: #DED6D6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 25px;
+    padding-left: 3%;
+}
+
+.luane12 h2{
+    font-family: var(--poppins-font);
+    color: var(--cor-fonte-titulos-texto1);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+#localizacao{
+    display: flex;
+    width: 50%;
+    margin-left: 30px;
+    padding: 12px;
+    text-decoration: none;
+    color: #EDEAEA;
+    background-color: #733E35;
+    padding-right: 30px;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--poppins-font);
+}
+
+#localizacao:hover{
+    color:white;
+    background-color:#733e35d1;
+    transition: 0.3s all;
+}
+
+.coffeimg {
+    position: relative;
+    width: 80%;
+    z-index: +2;
+    float: right;
+    left: 25%;
+}
+
+/*Gustavo - quarta parte*/
+#selo {
+    font-family: var(--poppins-font);
+    color: var(--cor-primaria-marrom);
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+.quarta-parte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.selos {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.selos section {
+    width: 45%;
+}
+
+.selos img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.selos h2 {
+    font-family: var(--poppins-font);
+    color: var(--cor-primaria-marrom);
+    font-size: 1.5rem; 
+}
+
+
+.selos p {
+    font-family: var(--poppins-font);
+    font-size: 1rem;
+}
+
+.news img{
+    width: 87%;
+    margin: 100px 100px 120px;
+    margin-bottom: -100px;
+}
 /*Pamela - Contato*/
 .img_contatocoffee {
     width: 100%;
@@ -336,7 +444,7 @@ nav .newsletter:hover{
 }
 
 .contato_h1 {
-    font-size: 37px;
+    font-size: 2.0rem;
     font-family: var(--poppins-font);
     color: var(--cor-fonte-titulos-texto1);
     text-align: center;
@@ -398,6 +506,142 @@ nav .newsletter:hover{
     color: var(--cor-fonte-botoes);
 }
 
+/* ----- RODRIGO CARDAPIO ----- */
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fontes/Poppins-Regular.ttf);
+}
+
+.cardapio_img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+.secao_cardapio{
+    position: relative;
+    width: 100%;
+    height: 2710px;
+    background-color: rgba(237, 234, 234, 1);
+    margin: auto;
+}
+
+/* ----- Titulo ----- */
+.cardapio_h{
+    font-size: 2.9rem;
+    font-family: var(--poppins-font);
+    color: rgba(84, 46, 40, 1);
+    text-align: center;
+    margin: auto;
+    font-weight:600;
+}
+
+.titulo_cardapio{
+    position: relative;
+    width: 72%;
+    height: 110px;
+    margin: auto;
+}
+
+.categoria{
+    font-size: 2.6rem;
+    font-family: var(--poppins-font);
+    color: rgba(84, 46, 40, 1);
+    font-weight: 550;
+    text-align: center;
+    margin: auto;
+}
+
+.titulo_cardapio p{
+    font-size: 22px;
+    font-family: var(--Montserrat-font);
+    text-align: center;
+    font-weight: 400;
+    margin: auto;
+}
+
+/* ----- Nav ----- */
+
+.nav_cardapio{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.nav_cardapio a{
+    font-size: 24px;
+    font-family: var(--poppins-font);
+    font-weight: 600;
+    color: rgba(84, 46, 40, 0.49);
+    text-decoration: none;
+}
+.nav_cardapio a:hover{
+    color: rgba(84, 46, 40, 1);
+    transition: all 0.5s;
+    border-bottom: 6px solid rgba(84, 46, 40, 1);
+    border-radius: 5px;
+}
+
+/* ----- Divs ----- */
+
+.div_cardapio{
+    position: relative;
+    width: 100%;
+    height: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div_produtos{
+    position: relative;
+    width: 29%;
+    height: 102%;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+}
+.div_produtos_img{
+    width: 240px;
+    height: 210px;
+    margin: 5px 75px;
+}
+.div_produtos_img2{
+    width: 240px;
+    height: 210px;
+    margin: 15px 40px 0px 40px;
+}
+.div_produtos p{
+    position: relative;
+    font-size: 20px;
+    color: rgb(121, 97, 97);
+    text-align: left;
+    margin: 0px 20px;
+}
+.div_produtos h1{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin: 0px 20px;
+}
+.div_produtos h2{
+    font-size: 28px;
+    font-family: Poppins;
+    color: rgba(84, 46, 40, 1);
+    text-align: center;
+    margin: auto;
+}
+
+.div_produtos:hover{
+    background-color:rgba(244, 242, 242, 1);
+}
+
 /*Footer - Pamela*/
 footer {
     background-color: #261E1B;
@@ -422,7 +666,7 @@ footer * {
 
 footer h3 {
     font-family: var(--Montserrat-font);
-    font-size: 17px;
+    font-size: 20px;
     color: var(--cor-fonte-botoes);
     margin-left: 10px;
 }
