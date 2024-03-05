@@ -14,13 +14,15 @@
     --cor-fonte-botoes: #F6F6F6;
     --poppins-font: "Poppins", sans-serif;
     --Montserrat-font: "Montserrat", sans-serif;
+    --fundo-temporario: #edeaea;
 }
 
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    background-color: var(--cor-background);
+    background-color: var(--fundo-temporario); 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /*Rodrigo - menu */
@@ -216,18 +218,22 @@ nav .newsletter:hover{
 }
 
 /* Gustavo - Segunda parte - Explore nossos produtos */
-#segunda-parte {
+.segunda-parte {
     color: var(--cor-fonte-titulos1);
+    text-align: center;
     justify-content: center;
-    margin: 60px 0px 30px 0px;
+    height: 250px;
     width: 100%;
+    gap: 16px;
+    border-top: 3px solid #F6F6F6;
 }
 
 .explore-produtos {
     position: relative;
+    display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-top: 100px;
 }
 
 .explore-produtos h3{
@@ -235,6 +241,7 @@ nav .newsletter:hover{
     font-family: var(--poppins-font);
     font-size: 35px;
     color: var(--cor-fonte-texto1);
+    margin-top: -40px;
 }
 
 .explore-produtos p{
@@ -245,237 +252,122 @@ nav .newsletter:hover{
     position: relative;
 }
 
-#exclusivo{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-    height: 450px;
-    font-family: Arial, Helvetica, sans-serif;
-    gap: 16px;
-    background-color: var(--cor-background);
-    font-family: var(Montserrat);
-}
-
-.card{
-    background-color: #f5e8e8;
-    width: 220px;
-    height: 300px;
-    border-radius: 12px;
-    box-shadow: 4px 4px 12px #000000;
-    flex-wrap: wrap;
-    background-color: transparent;
-    margin: 20px;
-}
-
-.card img{
-    margin-bottom: 20px;
-    width: 100%;
-    height: 260px;
-    min-width: 20px;
-    border-top-left-radius: 12px ;
-    border-top-right-radius: 12px ;
-    background-color: transparent;
-}
-
-
-.card div{
+.cardsprodutos {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    height: 30%;
-    margin: 2px;
-    background-color: transparent;
-}
-
-.card p{
-    margin-top: 100px;
-    font-size: 12px;
-    color: #000
-}
-
-.card h1{
-    font-size: 21px;
-    margin-top: 10px;
-    
-}
-
-.card span{
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.card button{
-    margin-right: 20%;
-    margin-top: 40%;
-    height: 30px;
-    border: none;
-    padding: 1px;
-    width: 80%;
-    color: #542e28;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: var(--poppins-font);
-}
-
-.card button:hover {
-    color: var(--cor-fonte-botoes);
-    cursor: pointer;
-}
-
-/*Pamela - Contato*/
-.img_contatocoffee {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    gap: 16px;
+    background-color: #000000;
     width: 100%;
-    overflow: hidden;
-}
-.container_image {
-    width: 100%;  
-    overflow: hidden;
+    height: 400px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 12px #aaa;
 }
 
-.contato_h1 {
-    font-size: 37px;
+.imagem-produtos {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin-top: 10px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.cardsprodutos p{
+    color: var(--cor-fonte-titulos2);
+    font-size: 13px;
+    text-align: center;
+}
+
+.cardsprodutos h3{
+    color: var(--cor-fonte-titulos2);
+    text-align: center;
+}
+
+.cardsprodutos span{
+    color: var(--cor-fonte-titulos2);
+    text-align: center;
+
+}
+
+.cardsprodutos button{
+    text-align: center;
     font-family: var(--poppins-font);
     color: var(--cor-fonte-titulos-texto1);
-    text-align: center;
-    margin: 20px 0px 20px 0px;
-}
-
-.bloco1, .bloco2 {
-    width: 48%; 
-}
-
-.bloco1 {
-    float: right;
-}
-
-.bloco2 {
-    float: left;
-}
-
-.contato_p1, .contato_p2 {
-    font-family: var(--poppins-font);
-    font-weight: 400;
-    color: var(--cor-fonte-texto1);
-    margin-bottom: 20px;
-}
-
-.contato_p1 {
-    text-align: right;
-}
-
-.contato_p2 {
-    text-align: left;
-}
-
-.contato_botao1, .contato_botao2 {
-    background-color: var(--cor-primaria-marrom);
-    border-radius: 15px;
+    height: 30px;
     border: none;
-    font-weight: 400;
-    font-family: var(--poppins-font);
-    padding: 11px 24px 11px 20px;
-    transition: background-color 0.3s, color 0.5s;
-    color: var(--cor-fonte-botoes);
-    cursor: pointer;
-    margin: 10px 0px 15px 0px;
+    padding: 4px;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-.contato_botao1 {
-    float: right;
-    margin-bottom: 10px;
-}
 
-.contato_botao2 {
-    background-color: transparent;
-    color: var(--cor-primaria-marrom);
-    border: 1.5px solid var(--cor-primaria-marrom);
-}
-.contato_botao2:hover {
-    background-color: var(--cor-primaria-marrom);
-    color: var(--cor-fonte-botoes);
-}
+/* main */
 
-/*Footer - Pamela*/
-footer {
-    background-color: #261E1B;
+.conteudo-principal {
+
+    align-items: center;
     width: 100%;
+    /* A main deve ocupar toda a largura disponível */
+    max-width: 1700px;
+    /* Limita a largura máxima para evitar que o conteúdo fique muito amplo em telas grandes */
+    margin: 0 auto;
+    /* Centraliza a main horizontalmente */
     padding: 20px;
-    height: 270px;
-    overflow: hidden;
-    border-radius: 25px 25px 0px 0px;
-    margin-top: 260px;
-    position: relative; /* Adicionando posicionamento relativo */
+    /* Adiciona um espaçamento interno para afastar o conteúdo das bordas */
+    box-sizing: border-box;
+    /* Garante que o padding não aumente a largura da main */
+
 }
 
-.footer-content {
+.localizacao{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container-localizacao{
     display: flex;
     justify-content: space-around;
-    padding-top: 10px;
 }
 
-footer * {
-    background-color: transparent;
-}
-
-footer h3 {
-    font-family: var(--Montserrat-font);
-    font-size: 17px;
-    color: var(--cor-fonte-botoes);
-    margin-left: 10px;
-}
-
-footer p {
-    font-family: var(--Montserrat-font);
-    font-weight: 400;
-    color: var(--cor-terciaria-branca);
-    padding: 10px;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer li {
-    font-family: var(--Montserrat-font);
-    font-weight: 300;
-    color: var(--cor-terciaria-branca);
-    margin-bottom: 10px;
-}
-
-footer a {
-    text-decoration: none;
-    color: inherit;
-    padding: 5px;
-}
-
-footer p a {
-    display: inline-block; 
-    margin: -0.9px;
-}
-
-footer img {
-    width: 24px;
-    height: 24px;
-    margin-top: 10px;
-}
-
-.icones_footer {
+.container-texto{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+
 }
 
-.copy_footer {
-    text-align: center;
-    padding-top: 8px;
-    margin-top: 30px;
-    background-color: #6D5854;
-    width: 100%; 
-    position: absolute;
-    bottom: 0; 
-    left: 0; 
-    height: 60px;
+.titulo{
+    color: var(--cor-primaria-marrom);
+    font-size: 50px;
+}
+
+p{
+    font-size: 1.5rem;
+    color: var(--cor-fonte-texto1);
+    text-align: justify;
+}
+
+
+/* immagem */
+
+.img-cptm{
+    height: 500px;
+    width: 100%;
+}
+
+.container-mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img-mapa{
+    height: 700px;
+
 }
