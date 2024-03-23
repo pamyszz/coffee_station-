@@ -26,7 +26,7 @@
 .sobre_part1{
     height: 85vh;
     display: flex;
-    align-items: flex-end;
+    align-items: center;;
     background-image:url(/img/zyro-image1.png);
     background-repeat:no-repeat;
     background-size: 25vw 100vh;
@@ -61,8 +61,8 @@
     background-image: url(/img/xicara-de-cha-placer-de-cha-de-frutas-secas-removebg-preview-1.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 25vw 115vh;
-    background-position-y: top;
+    background-size: 20vw 125%;
+    background-position-y: center;
 }
 .sobre_texts2{
     width: 60%;
