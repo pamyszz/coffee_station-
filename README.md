@@ -22,16 +22,16 @@ A Coffee Station visa fornecer uma plataforma online abrangente para clientes de
    - Reservas de mesas e eventos
    - Facilidade de contato
 
-## 🎨 Público Alvo
-Classificação Livre, todos os públicos. Especialmente direcionado para estudantes e profissionais que buscam um ambiente tranquilo e confortável para trabalhar ou estudar.
+## 🔗 Deploy
+O projeto está hospedado no Vercel. Você pode visualizá-lo [aqui.](https://coffee-station-mauve.vercel.app/)
 
-## 📍 Localização
-Cafeterias estão localizadas em estações de viagens, trem e metrô. Cada linha mais movimentada da estação oferece um sabor diferente.
-
-📸 Imagens
+## 📸 Imagens
 ![image](https://github.com/pamyszz/coffee_station-/assets/153380356/802613ca-bff0-4d82-b645-87e5704f9c33)
 ![image](https://github.com/pamyszz/coffee_station-/assets/153380356/97af4032-65dd-47bc-b88f-4066bb74ef24)
 ![image](https://github.com/pamyszz/coffee_station-/assets/153380356/83d9bc32-400c-4df1-9efa-1d3b9cc65fe3)
 
+## 💡 Sugestões e Contribuições
 
-Aproveite o café enquanto navega na Coffee Station! ☕👩‍💻👨‍💻
+Este projeto é aberto a sugestões e contribuições. Se você tiver alguma ideia para melhorar o projeto, sinta-se à vontade para propor alterações ou enviar suas contribuições por meio de pull requests.
+
+## Aproveite o café enquanto navega na Coffee Station! ☕👩‍💻👨‍💻
